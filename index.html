@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- UNICONS -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="assets/images/favicon.webp" type="image/x-icon">
+        <title> Processo Seletivo | MMO SX</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- -- HEADER -- -->
+            <nav id="header">
+                <div class="nav-logo">
+                    <p class="nav-name">MMO</p>
+                    <span>.</span>
+                </div>
+                <div class="nav-menu" id="myNavMenu">
+                    <ul class="nav_menu_list">
+                        <li class="nav_list">
+                            <a href="#home" onclick="clearGameList()" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#gameContainer" onclick="getGameList()" class="nav-link">Jogos</a>
+                        </li>
+                        <!-- <li class="nav_list">
+                            <a href="#filters" class="nav-link">Filtros</a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="nav-button">
+                    <button type ="button" class="btn" onclick="location.href='#gameContainer'; getGameList();">Ver lista<i class="uil uil-search"></i></button>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+                </div>
+            </nav>
+        
+        
+        <!-- -- MAIN -- -->
+        <main class="wrapper">
+         <section class="featured-box" id="home">
+            <div class="featured-text">
+                <div class="featured-text-card">
+                    <span>MMO SX&CO</span>
+                </div>
+                <div class="featured-name">
+                    <p><br>Bem-vindos ao</p><span class="typedText">MMO SX</span></p>
+                    <p><br>Aqui você encontra o melhor do MMO para você</p><br>
+                </div>
+                <div class="featured-text-btn">
+                    <button class="btn blue-btn" onclick="getGameList();">Pesquisar agora</button>
+                </div>
+            </div>
+            <div class="featured-image">
+                <div class="image">
+                    <img src="assets/images/banner.jpg" alt="SX MMO Banner">
+                </div>
+            </div>
+         </section>
+         <!-- -- SEARCH BOX --
+       <section class="section" id="search-box">
+        <div class="top-header">
+          <h1>Pesquisa</h1>
+        </div>
+        <div class="row">
+          <div class="col">
+              <div class="search-box">
+                  <h3>PESQUISE SEU MMO:</h3>
+                  <p>Insira o nome de um MMO ou utilize os filtros ao lado para ver todos da categoria desejada.
+                  </p>
+                  <input type="text" id="search-input" placeholder="Digite o nome do jogo...">
+                  <div class="search-btn">
+                      <button class="btn">Pesquisar</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+            <h3 class="filter-call">Filtros</h3>
+              <div class="filters-box">
+                
+                  <div class="filters-header">
+                      <h3>Gênero</h3>
+                  </div>
+                  <div class="filters-list">
+                      <span>Ação</span>
+                      <span>Tiro</span>
+                      <span>Corrida</span>
+                      <span>Aventura</span>
+                      <span>Estratégia</span>
+                      <span>Sobrevivência</span>
+                      <span>MMORPG</span>
+                  </div>
+              </div>
+              <div class="filters-box">
+                  <div class="filters-header">
+                      <h3>Plataforma</h3>
+                  </div>
+                  <div class="filters-list">
+                      <span>PC (WINDOWS)</span>
+                      <span>XBOX</span>
+                      <span>PLAYSTATION</span>
+                      <span>SWITCH</span>
+                  </div>
+              </div>
+              <div class="filters-box">
+                  <div class="filters-header">
+                      <h3>Desenvolvedora</h3>
+                  </div>
+                  <div class="filters-list">
+                      <span>CAPCOM</span>
+                      <span>NINTENDO</span>
+                      <span>SEGA</span>
+                      <span>BETHESDA</span>
+                      <span>RIOT GAMES</span>
+                      <span>BLIZZARD</span>
+                  </div>
+              </div>
+          </div>
+        </div>
+     </section> -->
+     <!-- -- GAME LIST -- -->
+     <section class="section" id="games">
+        <div class="top-header">
+            <h1>Jogos</h1>
+        </div>
+        <div class="game-container" id="gameContainer">
+        </div>
+          
+     </section>
+        </main>
+        <!-- FOOTER -->
+        </div>
+
+
+        <!-- TYPED JS (EFEITO DE ESCRITA) -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <!-- SCROLL REVEAL (o que deixa bonitinho a rolagem) -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- JS SCRIPT MAIN -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
